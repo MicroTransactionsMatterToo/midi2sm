@@ -19,9 +19,28 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
+from enum import Enum
 
 """
 An object representing a Standard MIDI File
 """
 
-class StandardMIDIFile:
+open
+
+class HeaderFormat(Enum):
+    single_track = 0x0
+    multi_track = 0x1
+    mutli_file = 0x2
+
+class StandardMIDIHeader:
+    def __init__(self,
+                 magic_number: int = 0x4D546864,
+                 header_length: int = 0x6, ):
+        self.magic_number = 0x4D546864  # MIDI Files always start with MThd
+        self.header_length = 0x6  # Almost always 6 bytes long
+        self.format = HeaderFormat.single_track  # Default value
+        self.track_quantity = None  # This is not defaultable
+        self.tick_division = None
+        # Error Checking
+        if not isinstance(self.format, HeaderFormat):
+            raise TypeError("format should be a value present in HeaderFormat")

@@ -1,0 +1,23 @@
+commit c1ac1193f327f8d800124241c16028c79602c4b4
+Author: Ennis Massey <ennisbaradine@gmail.com>
+Date:   Sat Oct 1 22:25:43 2016 +1300
+
+    Beginnings of MIDI Parsing, added test MIDI File
+
+commit 948974f1ba3500fac1d236b3b5b1e52f4ab68128
+Author: Ennis Massey <ennisbaradine@gmail.com>
+Date:   Sat Oct 1 22:16:56 2016 +1300
+
+    Add .gitignore, add first module
+
+commit 179ef59aa0ec5af481eadcbf21c2cab7910009ea
+Author: Ennis Massey <ennisbaradine@gmail.com>
+Date:   Sat Oct 1 22:08:38 2016 +1300
+
+    Finish
+
+commit 7ac2546fb2bd4d3d086c40c32d999ae026b52f5c
+Author: Ennis Massey <ennisbaradine@gmail.com>
+Date:   Sat Oct 1 22:00:16 2016 +1300
+
+    Initial Commit
