@@ -26,4 +26,16 @@ setup(
     name="midi2sm",
     description="Converts MIDI files to Stepmania StepFiles",
     license="MIT",
+    version="0.0.1",
+    author="Ennis Massey",
+    author_email="ennisbaradine@gmail.com",
+    requires=find_packages(),
+    classifiers=[
+        "Development Status :: 1 - Planning",
+        "Environment :: Console",
+        "License :: OSI Approves :: MIT License",
+        "Programming Language :: Python :: 3 :: Only",
+        "Topic :: Games/Entertainment :: Arcade",
+        "Topic :: Multimedia :: Sound/Audio :: MIDI",
+    ]
 )
